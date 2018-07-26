@@ -6,4 +6,4 @@ applications:
   - route: richard-pal-tracker-review.apps.evans.pal.pivotal.io
   env:
     WELCOME_MESSAGE: Hello from the review environment
-
+    RELEASE_TAG: pal-tracker-review
