@@ -6,3 +6,11 @@ applications:
   - route: richard-pal-tracker-review.apps.evans.pal.pivotal.io
   env:
     WELCOME_MESSAGE: Hello from the review environment
+
+    CF_API_URL: https://api.sys.evans.pal.pivotal.io
+    CF_ORG: leo-hee-hai-richard
+    CF_USERNAME: richardleo@ncs.com.sg
+    CF_PASSWORD: py75s23c
+
+    GITHUB_USERNAME: fullydead@github.com
+    GITHUB_OAUTH_TOKEN: b3a7083e2c34deecfb179b97aa4c641c08a32835
