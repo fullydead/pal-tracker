@@ -12,5 +12,5 @@ applications:
     CF_USERNAME: richardleo@ncs.com.sg
     CF_PASSWORD: py75s23c
 
-    GITHUB_USERNAME: fullydead
+    GITHUB_USERNAME: fullydead@github.com
     GITHUB_OAUTH_TOKEN: b3a7083e2c34deecfb179b97aa4c641c08a32835
