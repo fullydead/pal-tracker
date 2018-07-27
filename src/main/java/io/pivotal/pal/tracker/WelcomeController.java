@@ -10,7 +10,7 @@ public class WelcomeController {
     private String msg;
 
     WelcomeController(@Value("${WELCOME_MESSAGE}") String msg){
-
+        this.msg = msg;
     }
 
     @GetMapping("/")
