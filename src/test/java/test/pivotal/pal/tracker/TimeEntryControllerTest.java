@@ -29,8 +29,8 @@ public class TimeEntryControllerTest {
 
     @Test
     public void testCreate() throws Exception {
-        TimeEntry timeEntryToCreate = new TimeEntry(123L, 456L, LocalDate.parse("2017-01-08"), 8);
-        TimeEntry expectedResult = new TimeEntry(1L, 123L, 456L, LocalDate.parse("2017-01-08"), 8);
+        TimeEntry timeEntryToCreate = new TimeEntry(1L, 1L, LocalDate.parse("2017-01-08"), 8);
+        TimeEntry expectedResult = new TimeEntry(1L, 1L, LocalDate.parse("2017-01-08"), 8);
         doReturn(expectedResult)
             .when(timeEntryRepository)
             .create(any(TimeEntry.class));
@@ -46,7 +46,7 @@ public class TimeEntryControllerTest {
 
     @Test
     public void testRead() throws Exception {
-        TimeEntry expected = new TimeEntry(1L, 123L, 456L, LocalDate.parse("2017-01-08"), 8);
+        TimeEntry expected = new TimeEntry(1L, 1L, LocalDate.parse("2017-01-08"), 8);
         doReturn(expected)
             .when(timeEntryRepository)
             .find(1L);
@@ -71,8 +71,8 @@ public class TimeEntryControllerTest {
     @Test
     public void testList() throws Exception {
         List<TimeEntry> expected = asList(
-            new TimeEntry(1L, 123L, 456L, LocalDate.parse("2017-01-08"), 8),
-            new TimeEntry(2L, 789L, 321L, LocalDate.parse("2017-01-07"), 4)
+            new TimeEntry(1L, 1L, LocalDate.parse("2017-01-08"), 8),
+            new TimeEntry(2L, 2L, LocalDate.parse("2017-01-07"), 4)
         );
         doReturn(expected).when(timeEntryRepository).list();
 
@@ -85,7 +85,7 @@ public class TimeEntryControllerTest {
 
     @Test
     public void testUpdate() throws Exception {
-        TimeEntry expected = new TimeEntry(1L, 987L, 654L, LocalDate.parse("2017-01-07"), 4);
+        TimeEntry expected = new TimeEntry(1L, 1L, LocalDate.parse("2017-01-07"), 4);
         doReturn(expected)
             .when(timeEntryRepository)
             .update(eq(1L), any(TimeEntry.class));
